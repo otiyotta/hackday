@@ -24,30 +24,43 @@
 				}
 
           var data = new Array();
-					data.push({position: new google.maps.LatLng(36, 139.826395),  content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.624093586339576, 139.60086822509766),  imagePath:'./red-dot.png',  content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-					data.push({position: new google.maps.LatLng(36.7005, 139.826395), content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.59506483918009, 139.5754623413086), imagePath: './red-dot.png', content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-					data.push({position: new google.maps.LatLng(38.7005, 139.826395), content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.581942623124036, 139.56584930419922), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-
-          var data_another = new Array();
-					data.push({position: new google.maps.LatLng(36, 140.826395), content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.543401137387335, 139.53907012939453), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-					data.push({position: new google.maps.LatLng(36.7005, 141.826395), content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.55010533588551, 139.54593658447266), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-					data.push({position: new google.maps.LatLng(38.7005, 142.826395), content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+					data.push({position: new google.maps.LatLng(35.54312178361944, 139.53907012939453), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'});
-
- 					var myMap = new google.maps.Map(document.getElementById('map'), {
-						    zoom: 8,
-						    center: new google.maps.LatLng(35.71, 139.83),
+					data.push({position: new google.maps.LatLng(35.54004882795015, 139.5366668701172), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(35.530829254531724, 139.52327728271484), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(35.527476419681335, 139.51229095458984), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(35.51881428123057, 139.50267791748047), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(35.50008969167118, 139.4776153564453), imagePath:'./red-dot.png', content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					
+					var myMap = new google.maps.Map(document.getElementById('map'), {
+						    zoom: 10,
+						    center: new google.maps.LatLng(35.4732456, 139.420753),
 						    scrollwheel: true,
 						    mapTypeId: google.maps.MapTypeId.ROADMAP
 				  });
@@ -55,24 +68,12 @@
 					for (i = 0; i < data.length; i++) {
 				    var myMarker = new google.maps.Marker({
 				      position: data[i].position,
-				      map: myMap
+				      map: myMap,
+							icon: data[i].imagePath
 				    });
 				    attachMessage(myMarker, data[i].content);
 				  }
-
-					var blue ={
-					path: './blue-dot.png'
-				  };
-
-					for (i = 0; i < data_another.length; i++) {
-				    var myMarker2 = new google.maps.Marker({
-				      position: data_another[i].position,
-				      map: myMap,
-							icon: blue
-				    });
-				    attachMessage(myMarker2, data_another[i].content);
-				  }
-      }
+			}
 /*			
 					// ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
 					google.maps.event.addListener(infowindow, "closeclick", function() {
