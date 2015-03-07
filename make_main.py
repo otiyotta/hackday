@@ -23,7 +23,7 @@ def print_mypoint(my_point):
   for i in my_point:
     print '''
  		data.push({position: new google.maps.LatLng(%s, %s),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});

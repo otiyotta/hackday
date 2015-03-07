@@ -1,76 +1,76 @@
 
  		data.push({position: new google.maps.LatLng(35.6240935863, 139.600868225),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5950648392, 139.575462341),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5819426231, 139.565849304),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5434011374, 139.539070129),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5501053359, 139.545936584),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5431217836, 139.539070129),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.540048828, 139.53666687),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5308292545, 139.523277283),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5274764197, 139.512290955),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5188142812, 139.502677917),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
           
 
  		data.push({position: new google.maps.LatLng(35.5000896917, 139.477615356),
-                      imgpath: './pic/red-dot.png',
+                      imgpath: './pic/chara.png',
                       content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
  					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
  					'</video>'});
