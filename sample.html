@@ -31,12 +31,6 @@
 						  map: map
 					});
 
-          var marker2 = new google.maps.Marker({
-						  position: new google.maps.LatLng(38.68978889880994, 142.70049233458258),
-						  title: "うんこ",
-						  map: map
-					});
-
 					// ポップアップの作成
 					var infowindow= new google.maps.InfoWindow({
 						    //　動画の描画
@@ -47,7 +41,6 @@
 					});
 					//ポップアップを地図とマーカーを指定して開く
 					infowindow.open(map, marker);
-					infowindow.open(map, marker2);
 
 					// ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
 					google.maps.event.addListener(infowindow, "closeclick", function() {
