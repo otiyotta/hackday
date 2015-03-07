@@ -15,10 +15,11 @@
 
       <script type="text/javascript">
         function initialize() {
-        var mapOptions = {
+        // google mapを表示する位置などの命令
+				var mapOptions = {
           //center: new google.maps.LatLng(-34.397, 150.644),
           center: new google.maps.LatLng(338.6789, 139.644),
-          zoom: 8,
+          zoom: 10,
           mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById("map_canvas"),
@@ -29,15 +30,24 @@
 						  title: "新宿駅",
 						  map: map
 					});
+
+          var marker2 = new google.maps.Marker({
+						  position: new google.maps.LatLng(38.68978889880994, 142.70049233458258),
+						  title: "うんこ",
+						  map: map
+					});
+
 					// ポップアップの作成
 					var infowindow= new google.maps.InfoWindow({
-					//	    content: "新宿駅"
-						    content: '<video controls="" style="width:100px;height:100px;" poster="poster.png">' +
+						    //　動画の描画
+								//content: '<video controls="" style="width:100px;height:100px;" poster="poster.png">' +
+								content: '<video controls="" style="width:100px;height:100px;" >' +
 								'<source src="./hogehoge.mp4" type="video/mp4;">' +
 								'</video>'
 					});
 					//ポップアップを地図とマーカーを指定して開く
 					infowindow.open(map, marker);
+					infowindow.open(map, marker2);
 
 					// ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
 					google.maps.event.addListener(infowindow, "closeclick", function() {

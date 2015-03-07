@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style type="text/css">
+         html { height: 100% }
+         body { height: 100%; margin: 0; padding: 0 }
+         map { height: 100% }
+      </style>
+
+      <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDBgm4TZ3wme1BB9gppKkcFMhvY4oOxg5M&sensor=TRUE">
+      </script>
+
+      <script type="text/javascript">
+      function start(){  
+			 function attachMessage(marker, msg) {
+          google.maps.event.addListener(marker, 'click', function(event) {
+				    new google.maps.InfoWindow({
+				        content: msg
+				    }).open(marker.getMap(), marker);
+				  });
+				}
+
+          var data = new Array();
+					data.push({position: new google.maps.LatLng(36, 139.826395), content: 'うんこ' + '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(36.7005, 139.826395), content: '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+					data.push({position: new google.maps.LatLng(38.7005, 139.826395), content: '<video controls="" style="width:100px;height:100px;" >' +
+								'<source src="./hogehoge.mp4" type="video/mp4;">' +
+								'</video>'});
+
+					var myMap = new google.maps.Map(document.getElementById('map'), {
+						    zoom: 8,
+						    center: new google.maps.LatLng(35.71, 139.83),
+						    scrollwheel: false,
+						    mapTypeId: google.maps.MapTypeId.ROADMAP
+				  });
+
+					for (i = 0; i < data.length; i++) {
+				    var myMarker = new google.maps.Marker({
+				      position: data[i].position,
+				      map: myMap
+				    });
+				    attachMessage(myMarker, data[i].content);
+				  }
+			}
+			
+					// ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
+					google.maps.event.addListener(infowindow, "closeclick", function() {
+					  google.maps.event.addListenerOnce(marker, "click", function(event) {
+					    infowindow.open(map, marker);
+					  });
+					});
+			
+      </script>
+
+    </head>
+    <body onload="start()">
+      <div id="map" style="width:100%; height:100%"></div>
+   </body>
+</html>
