@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <style type="text/css">
          html { height: 100% }
          body { height: 100%; margin: 0; padding: 0 }
@@ -15,57 +15,473 @@
 
       <script type="text/javascript">
       function start(){  
-			 function attachMessage(marker, msg) {
+             function attachMessage(marker, msg) {
           google.maps.event.addListener(marker, 'click', function(event) {
-				    new google.maps.InfoWindow({
-				        content: msg
-				    }).open(marker.getMap(), marker);
-				  });
-				}
-
-          var data = new Array();
-					data.push({position: new google.maps.LatLng(36, 139.826395),
-                               imgpath: './pic/apple.png',
-                               content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
-								'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
-								'</video>'});
-					data.push({position: new google.maps.LatLng(36.7005, 139.826395),
-                               imgpath: './pic/gorira.png',
-                               content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
-								'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
-								'</video>'});
-					data.push({position: new google.maps.LatLng(38.7005, 139.826395),
-                               imgpath: './pic/rappa.png',
-                               content: 'ラッパ' + '<video controls="" style="width:100px;height:100px;" >' +
-								'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
-								'</video>'});
+                    new google.maps.InfoWindow({
+                        content: msg
+                    }).open(marker.getMap(), marker);
+                  });
+                }
 
 
- 					var myMap = new google.maps.Map(document.getElementById('map'), {
-						    zoom: 8,
-						    center: new google.maps.LatLng(35.71, 139.83),
-						    scrollwheel: true,
-						    mapTypeId: google.maps.MapTypeId.ROADMAP
-				  });
+            var data = new Array();
 
-				for (i = 0; i < data.length; i++) {
-				    var myMarker = new google.maps.Marker({
-				      position: data[i].position,
-				      map: myMap,
-                      icon: data[i].imgpath
-				    });
-				    attachMessage(myMarker, data[i].content);
-				  }
 
-      }
-/*			
-					// ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
-					google.maps.event.addListener(infowindow, "closeclick", function() {
-					  google.maps.event.addListenerOnce(marker, "click", function(event) {
-					    infowindow.open(map, marker);
-					  });
-					});
-*/			
+ 		data.push({position: new google.maps.LatLng(35.6240935863, 139.600868225),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5950648392, 139.575462341),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5819426231, 139.565849304),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5434011374, 139.539070129),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5501053359, 139.545936584),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5431217836, 139.539070129),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.540048828, 139.53666687),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5308292545, 139.523277283),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5274764197, 139.512290955),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5188142812, 139.502677917),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+ 		data.push({position: new google.maps.LatLng(35.5000896917, 139.477615356),
+                      imgpath: './pic/red-dot.png',
+                      content: 'りんご' + '<video controls="" style="width:100px;height:100px;" >' +
+ 					'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+ 					'</video>'});
+          
+
+			data.push({position: new google.maps.LatLng(35.6195792128, 139.568165283),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6295792128, 139.578165283),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6395792128, 139.588165283),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6295792128, 139.598165283),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6195792128, 139.608165283),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5985037312, 139.550655823),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6085037312, 139.560655823),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6185037312, 139.570655823),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.6085037312, 139.580655823),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5985037312, 139.590655823),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5726718803, 139.532459717),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5826718803, 139.542459717),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5926718803, 139.552459717),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5826718803, 139.562459717),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5726718803, 139.572459717),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5567532366, 139.522503357),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5667532366, 139.532503357),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5767532366, 139.542503357),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5667532366, 139.552503357),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5567532366, 139.562503357),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5566135598, 139.522503357),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5666135598, 139.532503357),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5766135598, 139.542503357),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5666135598, 139.552503357),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5566135598, 139.562503357),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5515853058, 139.5178685),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5615853058, 139.5278685),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5715853058, 139.5378685),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5615853058, 139.5478685),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5515853058, 139.5578685),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5454390412, 139.509972076),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5554390412, 139.519972076),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5654390412, 139.529972076),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5554390412, 139.539972076),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5454390412, 139.549972076),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5391528371, 139.497784119),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5491528371, 139.507784119),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5591528371, 139.517784119),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5491528371, 139.527784119),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5391528371, 139.537784119),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5331453505, 139.487484436),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5431453505, 139.497484436),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5531453505, 139.507484436),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5431453505, 139.517484436),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5331453505, 139.527484436),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5194519865, 139.470146637),
+                             imgpath: './pic/star.png',
+                             content: 'ゴリラ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5294519865, 139.480146637),
+                             imgpath: './pic/star.png',
+                             content: 'らっぱ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5394519865, 139.490146637),
+                             imgpath: './pic/star.png',
+                             content: 'ぱんだ' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5294519865, 139.500146637),
+                             imgpath: './pic/star.png',
+                             content: '団子' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+			data.push({position: new google.maps.LatLng(35.5194519865, 139.510146637),
+                             imgpath: './pic/star.png',
+                             content: 'ごま' + '<video controls="" style="width:100px;height:100px;" >' +
+							'<source src="./movie/hogehoge.mp4" type="video/mp4;">' +
+							'</video>'});
+              
+
+
+
+
+
+
+            var myMap = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 10,
+                      center: new google.maps.LatLng(35.4732456, 139.420753),
+                      scrollwheel: true,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+              for (i = 0; i < data.length; i++) {
+              var myMarker = new google.maps.Marker({
+                position: data[i].position,
+                map: myMap,
+                icon: data[i].imgpath
+                });
+                attachMessage(myMarker, data[i].content);
+              }
+            }
+/*          
+                    // ポップアップがクローズされた場合、マーカーを押されたらポップアップが開くイベントを付与
+                    google.maps.event.addListener(infowindow, "closeclick", function() {
+                      google.maps.event.addListenerOnce(marker, "click", function(event) {
+                        infowindow.open(map, marker);
+                      });
+                    });
+*/          
       </script>
 
     </head>
@@ -73,3 +489,4 @@
       <div id="map" style="width:100%; height:100%"></div>
    </body>
 </html>
+
