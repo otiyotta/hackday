@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import pylab
-
 
 def main():
   my_point =[
@@ -43,7 +41,7 @@ def print_subpoint(my_point):
       continue
 
 
-    h_point, w_point = subpoint(pre,now)
+    h_point, w_point = subpoint(pre,now,len(terms))
     for n in range(len(terms)):
       print '''
 			data.push({position: new google.maps.LatLng(%s, %s),
@@ -54,14 +52,23 @@ def print_subpoint(my_point):
               ''' %(h_point[n] ,w_point[n], terms[n])
     pre=now
 
-def subpoint(pre,now):
-  h_point =range(min(pre[0],now[0]), max(pre[0],now[0]) )
-  w_point =range(min(pre[1],now[1]), max(pre[1],now[1]) )
+def subpoint(pre,now,n):
+  h_sub =min(pre[0],now[0])- max(pre[0],now[0])
+  w_sub =min(pre[1],now[1])- max(pre[1],now[1])
+
+  h_step=h_sub/(n+1)
+  w_step=w_sub/(n+1)
+
+  h_point=[]
+  for h in range(n):
+    h_point.append(max(pre[0],now[0])+(h_step*(1+h)))
+
+  w_point=[]
+  for w in range(n):
+    w_point.append(max(pre[1],now[1])+(w_step*(1+w)))
+
+  #print h, h_point, w_point
   return h_point, w_point
-
-
-
-
   
 if __name__ == '__main__':
   main()
